@@ -1,13 +1,13 @@
 /*
 Exercise 2.
-Stwórz dwuwymiarow¹ tablicê 3x3 przechowuj¹c¹ l. ca³kowite. Zainicjalizuj t¹ tablicê wybranymi przez Ciebie liczbami. (Ka¿da komórka tablicy powinna mieæ jak¹œ wartoœæ)
+StwÃ³rz dwuwymiarowÄ… tablicÄ™ 3x3 przechowujÄ…cÄ… l. caÅ‚kowite. Zainicjalizuj tÄ… tablicÄ™ wybranymi przez Ciebie liczbami. (KaÅ¼da komÃ³rka tablicy powinna mieÄ‡ jakÄ…Å› wartoÅ›Ä‡)
 
-Napisz program, który pyta siê u¿ytkownika o wartoœæ x i y (od 1 do 3). Program powinien wypisaæ w konsoli wartoœæ przechowywan¹ w tablicy odpowiednio do podanych wspó³rzêdnych x i y.
-Pamiêtaj, ¿e wspó³rzêdne numerujemy od 1 a tablicê numerujemy od ZERA.
+Napisz program, ktÃ³ry pyta siÄ™ uÅ¼ytkownika o wartoÅ›Ä‡ x i y (od 1 do 3). Program powinien wypisaÄ‡ w konsoli wartoÅ›Ä‡ przechowywanÄ… w tablicy odpowiednio do podanych wspÃ³Å‚rzÄ™dnych x i y.
+PamiÄ™taj, Å¼e wspÃ³Å‚rzÄ™dne numerujemy od 1 a tablicÄ™ numerujemy od ZERA.
 
-Przyk³ad:
+PrzykÅ‚ad:
 
-U¿ytkownik wpisuje:
+UÅ¼ytkownik wpisuje:
 x: 2
 y: 2
 
@@ -26,11 +26,13 @@ main()
 	std::cin >> x;
 	std::cout << "Wprowadz wsporzedna y: " << std::endl;
 	std::cin >> y;
-	bool term = ((y>=0) && (y<=3));
-	bool term2 = ((x>=0) && (x<=3));
+	bool term = ((y>=0) && (y<=2));
+	bool term2 = ((x>=0) && (x<=2));
 	if ((term) && (term2))
+	{
 		std::cout << "Wartosc wspolrzednej o wspolrzednych " << x << " i " << y << " " << "to: " << std::endl;
 		std::cout << tab[x][y] << std::endl;
+	}
 	
 	
 }
