@@ -30,12 +30,22 @@ main()
 	std::cin >> c;
 	std::cin >> d;
 	
+	std::cout << "val 1 = " << a <<std::endl;
+	std::cout << "val 2 = " << b <<std::endl;
+	std::cout << "val 3 = " << c <<std::endl;
+	std::cout << "val 4 = " << d <<std::endl;
+	
 	// Zapisz te liczby w 4-elementowej tablicy typu double.
 	double tab[4] = {a,b,c,d};
 	
+	//sprawdzanie tablicy
+//	for(int i=0;i<=3;i++)
+//		std::cout<<tab[i]<<std::endl;
+	
 	int suma = a+b+c+d;
-	std::cout << "Suma tych liczna to: " << suma << std::endl;
-	std::cout << "Adresy 1. i 4. elementu tablicy to: " << &tab[0] << " i " << &tab[3] << std::endl;
+	std::cout << "Wynik: " << suma << std::endl;
+	std::cout << "Adresy 1. elementu tablicy to: " << &tab[0] <<std::endl;
+	std::cout << "Adresy 4. elementu tablicy to: " << &tab[3] <<std::endl;
 	
 	
 	
