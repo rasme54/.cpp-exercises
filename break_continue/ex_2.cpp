@@ -1,7 +1,7 @@
 /*
 Exercise 2.
 
-Write a program that will show the user the actual sum of the numbers (starting at 0). Then she asks if
+Write a program that will show the user the actual sum of the numbers (starting at 0). Then it asks if
 the user wants to add another number (increasing by 1 in an infinite loop). If the user enters Y or y
 adds the mentioned number. If the user enters N or n, the number is skipped and incremented
 at 1 (continue). If the user enters anything else followed by Y / y or N / n, the loop closes (breaks).
@@ -53,9 +53,12 @@ int main()
 //	std::cout<<ansN<<std::endl;
 //	std::cout<<ansn<<std::endl;
 	
-		if((answer == ansY) or (answer == ansy))
+		if((answer == ansY) || (answer == ansy))
+		{
 			sum=sum+add;
-		else if((answer == ansN) or (answer == ansn))
+			add++;
+		}
+		else if((answer == ansN) || (answer == ansn))
 			add++;
 		else
 			break;

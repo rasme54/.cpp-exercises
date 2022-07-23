@@ -24,10 +24,10 @@ int main()
 	std::cout<<"Input: "<<std::endl;
 	std::cin>>num;
 	
-	for(int i=1;i<=num;i++)
+	for(int i=1; i<=num; i++)
 	{
 		
-		if((i%2)==0)
+		if(i % 2==0)
 		{
 			std::cout<<"Output: "<<std::endl;
 			sum=sum+i;

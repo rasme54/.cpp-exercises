@@ -37,11 +37,13 @@ int main()
 //	std::cout<<tab[3]<<std::endl;
 //	std::cout<<tab[4]<<std::endl;
 
-	for(int i=1;i<=5;i++)
+	for(int i=0;i<5;i++)
+	{
 		if (board[i]%2==0)
 		std::cout<<"Number "<<board[i]<<" is even."<<std::endl;
 		else
 		std::cout<<"Number "<<board[i]<<" is odd."<<std::endl;
+	}
 
 
 	

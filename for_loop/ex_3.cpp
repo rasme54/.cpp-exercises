@@ -26,9 +26,21 @@ int main()
 	std::cin >> power;
 	base2=base;
 	
-	for(int i=1;i<power;i++)
+	
+	switch (power)
 	{
-		base=base*base2;
-    }	
-    std::cout<<"The result is: "<<base<<std::endl;
+	case 0:
+	{
+	std::cout << "The result is: 1" << std::endl;
+	break;
+	}	
+	default:
+	for (int i = 1; i < power; i++)
+	{
+	base*=base2
+	}
+	std::cout << "The result is: " << base << std::endl;
+	}
+	
+    
 }

@@ -26,12 +26,11 @@ main()
 	std::cin >> x;
 	std::cout << "Wprowadz wsporzedna y: " << std::endl;
 	std::cin >> y;
-	bool term = ((y>=0) && (y<=3));
-	bool term2 = ((x>=0) && (x<=3));
-	if ((term) && (term2))
+	
+	if (x>=1 && x<=3 && y>=1 && y<=3)
 	{
 		std::cout << "Wartosc wspolrzednej o wspolrzednych " << x << " i " << y << " " << "to: " << std::endl;
-		std::cout << tab[x-1][y-1] << std::endl;
+		std::cout << tab[--x][--y] << std::endl;
 	}
 	else
 	std::cout<<"Podane wartosci nie mieszcza sie w rozmiarze tablicy 3x3"<<std::endl;
